@@ -1,0 +1,7 @@
+{
+  "id": "add-header-pdf",
+  "name": "Add Header to PDF",
+  "description": "Adds a header to every page of a PDF.",
+  "author": "Your Name",
+  "version": "1.0.0"
+}
