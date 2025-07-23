@@ -1,6 +1,6 @@
 {
   "name": "PDF Header Plugin",
-  "description": "Adds a header to PDF files using Glide plugin.",
+  "description": "Adds a header to a PDF from a URL with custom text, font size, and color.",
   "author": "Dharmil Shah",
   "version": "0.0.1",
   "id": "pdf-header-plugin",
@@ -12,21 +12,45 @@
       "name": "PDF URL",
       "id": "pdf_url",
       "type": "string",
-      "required": true
+      "required": true,
+      "description": "The URL of the PDF to which you want to add a header."
     },
     {
       "name": "Header Text",
       "id": "header_text",
       "type": "string",
-      "required": true
+      "required": true,
+      "description": "The text you want to add as a header."
+    },
+    {
+      "name": "Font Size",
+      "id": "font_size",
+      "type": "number",
+      "required": false,
+      "description": "Font size for the header text."
+    },
+    {
+      "name": "Font Color",
+      "id": "font_color",
+      "type": "string",
+      "required": false,
+      "description": "Font color for the header text (hex code)."
+    },
+    {
+      "name": "Header Position",
+      "id": "header_position",
+      "type": "string",
+      "required": false,
+      "description": "Position of the header (top, bottom)."
     }
   ],
 
   "outputs": [
     {
-      "name": "Header Added PDF URL",
-      "id": "output_pdf_url",
-      "type": "string"
+      "name": "PDF with Header URL",
+      "id": "pdf_with_header_url",
+      "type": "string",
+      "description": "The URL of the new PDF with the header added."
     }
   ]
 }
