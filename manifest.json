@@ -1,7 +1,32 @@
 {
-  "id": "add-header-pdf",
-  "name": "Add Header to PDF",
-  "description": "Adds a header to every page of a PDF.",
-  "author": "Your Name",
-  "version": "1.0.0"
+  "name": "PDF Header Plugin",
+  "description": "Adds a header to PDF files using Glide plugin.",
+  "author": "Dharmil Shah",
+  "version": "0.0.1",
+  "id": "pdf-header-plugin",
+  "type": "plugin",
+  "sourceUrl": "https://Dharmil-Shah.github.io/pdf-header-plugin/",
+
+  "parameters": [
+    {
+      "name": "PDF URL",
+      "id": "pdf_url",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "Header Text",
+      "id": "header_text",
+      "type": "string",
+      "required": true
+    }
+  ],
+
+  "outputs": [
+    {
+      "name": "Header Added PDF URL",
+      "id": "output_pdf_url",
+      "type": "string"
+    }
+  ]
 }
