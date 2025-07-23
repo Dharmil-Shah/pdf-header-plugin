@@ -1,0 +1,44 @@
+{
+  "name": "PDF Header Plugin",
+  "description": "Add headers to PDFs using Glide plugin.",
+  "version": "0.0.1",
+  "author": "Dharmil Shah",
+  "type": "code",
+  "parameters": [
+    {
+      "name": "pdf_url",
+      "type": "string",
+      "required": true,
+      "description": "URL of the PDF to modify"
+    },
+    {
+      "name": "header_text",
+      "type": "string",
+      "required": true,
+      "description": "Header text to add to the PDF"
+    },
+    {
+      "name": "font_size",
+      "type": "number",
+      "required": false,
+      "description": "Font size of the header text"
+    },
+    {
+      "name": "font_color",
+      "type": "string",
+      "required": false,
+      "description": "Color of the header text (hex code)"
+    },
+    {
+      "name": "header_position",
+      "type": "string",
+      "required": false,
+      "description": "Position of the header (top or bottom)"
+    }
+  ],
+  "result": {
+    "name": "pdf_with_header_url",
+    "type": "string",
+    "description": "Data URL of the modified PDF with header"
+  }
+}
